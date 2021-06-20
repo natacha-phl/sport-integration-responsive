@@ -1,0 +1,326 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+    background-color: black;
+}
+
+#container{
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+
+header{    
+    background-color: #f8f8f8;
+}
+
+#header-container{
+    display: flex;
+    padding : 20px 20px 0px 20px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+#logo-slogan{
+    width: 30%;
+    border-left: coral 2px solid;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#logo img{
+    max-width: 100%;
+    padding-left: 10px;
+}
+
+#slogan{
+    padding-left: 10px;
+}
+
+#header-content{
+    width: 70%;
+    padding-right: 60px;
+    padding-left: 40px;
+
+}
+
+#account-content{
+    display:flex;
+    border: solid grey 2px;
+    background-color: #efefef;
+    padding: 10px 0px 10px 0px;
+}
+
+#account-access{
+    width: 50%;
+    display: flex;
+    padding-left: 30px;
+    align-items:center;
+}
+
+#basket-access{
+    width: 50%;
+    display: flex;
+    align-items:center;
+}
+
+#greetings{
+    text-align: right;
+
+}
+
+header nav {
+    padding-bottom: 10px;
+}
+
+header nav a{
+    text-decoration: none; 
+    border-right: grey solid 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+header nav:last-child{
+    border-left: grey solid 2px;
+    padding-top: 10px;
+
+}
+
+main{
+    background-color: #f3f3f3;
+    width: 800px;
+    margin: 0 auto;
+}
+
+#home-picture img{
+    max-width: 100%;
+}
+
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.product{
+    width: 43%;
+    padding: 28px;
+}
+
+.product-details{
+    background-color: white;
+    box-shadow:  1px 1px 1px 1px grey;
+    position: relative;
+}
+
+.product-details p{
+    text-align: center;
+}
+
+.product-details img{
+    max-width: 100%;
+}
+
+.promotion{
+    background-color: #3c3c3c;
+    color: #ea9f05;
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: -14px;
+    padding: 7px;
+    box-shadow : 2px 2px 2px 2px #3c3c3c;
+  
+}
+
+.sale-info{
+    display: flex;
+    margin-top: 10px;
+}
+
+.sale-info p {
+    text-align: center;
+}
+
+.see-sale{
+    width: 40%;
+    color: white;
+    background-color: black;
+    padding: 10px;
+
+}
+
+.price{
+    width: 60%;
+    border-bottom: black solid 2px;
+}
+
+.price p{
+    color: #ebac42;
+    font-size: 2em;
+}
+
+.price p span{
+    text-decoration: line-through !important;
+    color: black !important;
+    font-weight: normal !important; 
+    font-size: 0.8em !important;  
+}
+
+
+footer{
+    background-color: #373737;
+    position: relative;
+}
+
+#footer-border{
+    background-color: #373737;
+    height: 20px;
+    width: 100%;
+    position: absolute;  
+    top: -60px;  
+}
+
+
+footer nav{
+    background-color: #f9f9f9;
+    width: 40%;  
+    margin-left: auto;
+    margin-right: auto;
+    padding: 26px 0px 26px 25px;
+    box-shadow:  2px 2px 2px 2px grey;
+    position: absolute;
+    top: -14%;
+    right: 29%;
+
+}
+
+footer nav a{
+    color: black;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+#policies{
+    display: flex;
+    text-align: center;
+    color: #f9f9f9;
+}
+
+.policy p{
+    margin-top: 18px;
+}
+
+#socials{
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18%;
+}
+
+#socials img{
+    padding: 0 10px;
+}
+
+#copyright{
+    text-align: center;
+    color: #f9f9f9;
+}
+
+
+@media (max-width:768px){
+	.product{
+		width:90%;
+	}
+
+    .product-details img {
+        display: flex;
+        flex: wrap;
+        margin: auto;
+    }
+
+    #container{
+        width: 768px;
+        }
+
+    #header-container{
+        max-width: 614.4px;
+    }
+
+    main{
+        width:614.4px;
+    }
+
+    #policies{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .policy{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    footer nav{
+        width: 51%;
+        top: -6%;
+        right: 21%;
+    }
+
+
+}
